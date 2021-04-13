@@ -6,4 +6,7 @@ router.route('/api/books')
 .post(bookController.createBook)
 .get(bookController.getBooks)
 
+router.route('/api/books/:id')
+.delete(bookController.deleteBook)
+
 module.exports = router

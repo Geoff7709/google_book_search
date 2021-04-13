@@ -8,7 +8,10 @@ function Saved() {
     const [savedBooks, setSavedBooks] = useState([])
     useEffect(() => {
         API.getBooks()
-        .then(response => setSavedBooks(response.data))
+        .then(response => {
+            console.log(response.data)
+            setSavedBooks(response.data)
+        })
         .catch(err => console.log(err))
     },[])
     return (
@@ -16,6 +19,11 @@ function Saved() {
             <Row>
                 <h2>Saved Books</h2>
             </Row>
+            {savedBooks.map(book => (
+                <Row key={book._id}>
+                    <SaveCard {...book} />
+                </Row>
+            ))}
         </Container>
     )
 }
