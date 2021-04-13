@@ -3,7 +3,7 @@ import Button from '../components/button'
 import ViewButton from '../components/viewButton'
 import API from '../utils/API'
 
-function BookCard(props) {
+function SaveCard(props) {
     const handleClick = () => {
         const bookData = {
             title: props.title,
@@ -36,4 +36,4 @@ function BookCard(props) {
     )
 }
 
-export default BookCard
+export default SaveCard

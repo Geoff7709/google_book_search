@@ -1,8 +1,9 @@
-const bookController = require('../controller/bookController')
+const bookController = require('../controllers/bookController')
 
 const router = require('express').Router()
 
 router.route('/api/books')
-.get(bookController.createBook)
+.post(bookController.createBook)
+.get(bookController.getBooks)
 
 module.exports = router

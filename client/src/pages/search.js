@@ -9,7 +9,7 @@ function Search() {
     const [bookSearch, setBookSearch] = useState([])
     const [form, setForm] = useState()
 
-    useEffect(() => console.log(bookSearch), [bookSearch])
+    // useEffect(() => console.log(bookSearch), [bookSearch])
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -18,6 +18,7 @@ function Search() {
                 const results = response.data.items
                 let search = []
                 results.map(book => search.push(book.volumeInfo))
+                console.log(search)
                 setBookSearch(search)
                 search = []
             })
