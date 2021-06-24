@@ -1,5 +1,4 @@
 # Google Book Search
-[Deployed Application]
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
  ## Table of contents
