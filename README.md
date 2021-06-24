@@ -20,7 +20,8 @@
 The Google Book Search is a full stack MERN application utilizing the Google Book API to search queries and mongoose to store selections server side for future reference.
 ## Usage
 
-Navigate to the [deployed website](https://thawing-castle-75901.herokuapp.com/) and follow the prompts in the app
+Navigate to the [deployed website](https://thawing-castle-75901.herokuapp.com/) and follow the prompts in the app:
+![usage video](./gbs_images/book_search.gif)
 
 ## Technologies
 
